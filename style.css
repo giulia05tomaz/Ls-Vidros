@@ -1,0 +1,525 @@
+/*CORPO*/
+
+body {
+    margin: 0;
+    background-color: #D15B00;
+}
+
+/*CORPO*/
+
+
+/*CABEÇALHO*/
+
+header {
+    position: fixed;
+}
+
+header img {
+    
+    border-style: solid;
+    border-color: white;
+    border-width: 08px;
+    margin-top: -20px;
+    height: 70px;
+    width: 100px;
+}
+
+
+/*CABEÇALHO*/
+
+
+/*MENU DENTRO DO HEADER*/
+
+ul {
+    height: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+li {
+    margin-left: 200px;
+    margin-right: -180px;
+    height: 60px;
+    float: left;
+}
+
+li a {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 17px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}
+
+#numero {
+    margin-top: 16px;
+    font-size: 22px;
+    color: #fff;
+    margin-left: 270px;
+}
+
+
+/*MENU DENTRO DO HEADER*/
+
+
+/*IMAGEM MENU*/
+
+#logo {
+    height: 50px;
+    margin-left: 25px;
+    width: 60px;
+    position: relative;
+    display: inline-block;
+    padding: 20px 25px;
+    margin-bottom: -15px;
+    z-index: 5;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+
+/*IMAGEM MENU*/
+
+
+/*DIV SEPARANDO MENU E IMAGEM PRINCIPAL*/
+
+#comeco {
+    background-color: #D15B00;
+    height: 50px;
+}
+
+
+/*DIV SEPARANDO MENU E IMAGEM PRINCIPAL*/
+
+
+/*CONFIGURAÇAO GERAL DE TODAS AS SECTIONS NA PAGINA*/
+
+section {
+    height: 500px;
+    padding: 2vw;
+    font-size: 4vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section:first-of-type {
+    text-transform: uppercase;
+    font-size: 7vw;
+}
+
+section {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section:nth-of-type(odd) {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+section:nth-child(5) {
+    margin-top: -110px;
+    background-image: url(imagens/home.png);
+    background-size: 100% 90%;
+    background-attachment: fixed
+}
+
+
+/*CONFIGURAÇAO GERAL DE TODAS AS SECTIONS NA PAGINA*/
+
+
+/*LEGENDA EM BAIXO DA IMAGEM*/
+
+#legenda-home {
+    margin-left: 1%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 430px;
+    color: #fff;
+    padding-top: 28px;
+    opacity: 0.7;
+}
+
+
+/*LEGENDA EM BAIXO DA IMAGEM*/
+
+
+/*DIV QUE SEPARA LEGENDA DAS QUATRO IMAGENS*/
+
+#separacao-imagem {
+   
+    font-style: italic;
+    height: 150px;
+    background-color: rgb(29, 28, 28);
+    font-size: 20px;
+    margin-top: -430px;
+    text-align: left;
+    margin-bottom: -50px;
+}
+
+
+/*DIV QUE SEPARA LEGENDA DAS CINCO IMAGENS*/
+
+
+/*DIV QUE ALOCA AS CINCO IMAGENS*/
+
+#Ft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin: 05px;
+    margin-bottom: 100px;
+}
+
+#divisao2 {
+    background-color: #a15a23;
+    height: 400px;
+}
+
+
+/*DIV QUE ALOCA AS CINCO IMAGENS*/
+
+
+/*CONFIGURAÇAO DOS CINCO BLOCOS DE IMAGEM*/
+
+
+/*edit link img */
+
+#B {
+    width: 160px;
+    height: 250px;
+    margin-bottom: -12px;
+}
+
+
+
+figure.quadro {
+    margin-left: -1px;
+    position: relative;
+    border: 8px solid ;
+    box-shadow: 1px 1px 4px black;
+    border-color: #f39a57;
+    
+}
+
+figure.quadro img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+figure.quadro figcaption {
+    
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .8);
+   
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.quadro:hover figcaption {
+    opacity: 1;
+}
+
+#link {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#Legend{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    opacity: 0.6;
+    font-size: 30px;
+}
+
+
+/*CONFIGURAÇAO DOS CINCO BLOCOS DE IMAGEM*/
+
+
+/*RODAPE*/
+
+footer {
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 25px;
+}
+/*RODAPE*/
+
+
+
+
+
+/*                                      PAGINA FAÇA SEU PEDIDO                                */
+
+/*COR LARANJA DE FUNDO*/
+#corpo-pedido{
+    background-color: #D15B00;
+    
+}
+
+/*IMAGEM DE FUNDO*/
+#background{
+    background-image: url(imagens/Logo_Ls.png);
+    background-repeat: no-repeat;
+    margin-left: 33px;
+    position: static;
+}
+
+/*ESTILIZAÇÃO DO p*/
+
+#telefone{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 43%;
+    margin-top: 20px;
+
+}
+
+#email{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 43%;
+    margin-top: 20px;
+}
+
+#nome  {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 43%;
+    margin-top: 20px;
+    
+}
+
+#tel{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 43%;
+    margin-top: 20px;
+}
+
+#nome-txt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#telefone-txt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#email-txt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#selecione-doc{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#Estado{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#Cidade{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+#pedido{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    text-align: center;
+}
+
+
+/*ESTILIZAÇÃO DO H1*/
+#entre-contato{
+    margin-top: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #D15B00;
+    text-align: center;
+}
+
+/*ESTILIZAÇÃO DO H3*/
+#campo-obrigatorio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #D15B00;
+    text-align: center;
+}
+
+
+/*ESTILIZAÇÃO DAS CAIXAS DE TEXTO*/
+.caixa{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 43%;
+    margin-top: 20px;
+}
+
+/*ESTLIZAÇÃO DO CHECKBOX */
+.checkbox{
+    border: 1px solid #5D5C5C;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin-left: 50%;
+    padding:0;
+    vertical-align: top;
+    width: 16px;
+    border-radius:4px;
+}
+
+/*ESTILIZAÇÃO DO CAMPO DE TEXTO ESTADO*/
+#estado{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+/*ESTILIZAÇÃO DO CAMPO DE TEXTO CIDADE*/
+#cidade{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: black;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+
+/*ESTILIZAÇÃO DO CAMPO DE PEDIDO*/
+
+
+/*ESTILIZAÇÃO DO BOTÃO*/
+.botao{
+    margin-left: 46%;
+    border-radius: 8px;
+    border: none;
+    font-size: 30px;
+    background-color: black;
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+
+/*LOGO DO PEDIDO*/
+
+#logo-pedido{
+    margin-top: -80px;
+    height: 50px;
+    margin-left: 25px;
+    width: 60px;
+    position: relative;
+    display: inline-block;
+    padding: 20px 25px;
+    margin-bottom: -15px;
+    z-index: 5;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.contato{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(20, 20, 20);
+    height: 150px;
+    background-color: rgb(20, 20, 20);
+}
+
+.contato{
+    margin-left: -370px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#Contato{
+    margin-bottom: 50px;
+}
+
+
+#redes{
+    
+    background-size: 10px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+#imagen-principal{
+    
+    height: 540px;
+}

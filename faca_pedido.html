@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Faça seu pedido</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body id="corpo-pedido">
+    <header id="pageHeader">
+
+        <!--MENU-->
+        <div id="logo-pedido"> <img src="imagens/Logo_Ls.png"> </div>
+
+        <nav id="menu">
+
+            <ul>
+
+                <li><a href="index_home.html">Home</a></li>
+                <li><a href="faca_pedido.html">Quem Somos</a></li>
+                <li><a href="faca_pedido.html">Serviços</a></li>
+                <li><a href="faca_pedido.html">Faça seu Pedido</a></li>
+                <li><a href="faca_pedido.html"> Parceiros e Clientes</a></li>
+                <a href="conexao.php"></a>
+                <li id="numero">(11) 96576-2383</li>
+            </ul>
+
+
+        </nav>
+        <!--MENU-->
+
+    </header>
+
+<!--FORMULARIO-->
+
+<div id="formulario"></div>
+
+<form name="entre_contato" action="Inserir.php" method="POST">
+    <div id="background">
+    <h1 id="entre-contato">Entre em Contato</h1>
+
+    <h3 id="campo-obrigatorio">Campos com * São Obrigatorios</h3>
+
+    <p id="nome-txt">Nome Completo *</p><input type="text" id="nome" placeholder="Digite seu Nome" name="nome"/><br/>
+    
+    <p id="telefone-txt">Telefone *</p><input type="text"  id="tel" placeholder="Ex: +(55) 11 955-0100" name="tel"/> <br/>
+
+    <p id="email-txt">E-mail *</p><input type="text" id="email" placeholder="LSvidros_hotmail.com" name="email"/> <br/>
+    
+
+    <p id="selecione-doc">Selecione o Documento:</p> <br/>
+    
+        <INPUT class="checkbox" TYPE="radio" NAME="OPCAO" VALUE="op1" CHECKED> RG
+        <INPUT class="checkbox" TYPE="radio" NAME="OPCAO" VALUE="op2"> CPF
+        <INPUT class="checkbox"TYPE="radio" NAME="OPCAO" VALUE="op3"> CNPJ
+        
+        
+         <br/>
+
+         <input type="text" id="doc" placeholder="Digite sua identidade" name="identidade" class="caixa" /></p> <br/> 
+
+    <p id="Estado">Digite seu Estado: <input type="text" id="estado" placeholder="Digite seu estado" name="estado"/></p> <br/>
+    <p id="Cidade"> Digite sua Cidade: <input type="text" id="cidade" placeholder="Digite sua cidade" name="cidade"/> </p><br>
+
+    <p id="pedido"> Digite seu pedido aqui (ou entre em contato):</p> <br/>
+    <p id="pedido"> <textarea name="Pedido" rows="15" cols="50"></textarea></p> <br/>
+
+               <div id="botao">
+
+                <button type="submit" class="botao" value="enviar" onclick="validar()">Enviar</button>
+
+               </div>
+
+               
+
+    </div>
+
+</form>
+<!--FORMULARIO-->
+
+<!--JAVA Script-->
+<script>
+
+    function validar(){
+        var nome = document.getElementById("nome");
+        var tel = document.getElementById("tel");
+        var email = document.getElementById("email");
+
+
+        if (nome.value == ""){
+            alert("Nome não Informado");
+
+            nome.focus();
+
+            return;
+        }
+
+        
+        if (tel.value == ""){
+            alert("telefone não Informado");
+
+            tel.focus();
+
+            return;
+        }
+
+        if (email.value == ""){
+            alert("email não Informado");
+
+            email.focus();
+
+            return;
+        }
+    }
+
+
+</script>
+
+<!--JAVA Script-->
+
+</body>
+
+<!--RODAPE-->
+<footer>Desenvolvido por Web Tec</footer>
+
+</html>
